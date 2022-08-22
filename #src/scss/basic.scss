@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  min-width: $minWidth;
+}
+body {
+  font-family: $fontFamily;
+  background-color: #5c87b3;
+}
+input,
+button,
+textarea {
+  font-family: $fontFamily;
+  font-weight: inherit;
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.main {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+
+  @media (max-width: 425px) {
+    padding: 20px;
+  }
+}
